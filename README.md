@@ -4,4 +4,4 @@ ZMK configuration for [charybdis](https://github.com/Bastardkb/Charybdis/tree/ma
 version with [nice!nano](https://nicekeyboards.com/nice-nano/).
 
 
-
+Yep :D
