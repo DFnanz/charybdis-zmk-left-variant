@@ -56,6 +56,36 @@
         };
     };
 
+    macros {
+        em_dash: em_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&em_dash>;
+            label = "EM_DASH";
+        };
+
+        en_dash: en_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&en_dash>;
+            label = "EN_DASH";
+        };
+
+        left_square_bracket: left_square_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&left_square_bracket>;
+            label = "LEFT_SQUARE_BRACKET";
+        };
+
+        right_square_bracket: right_square_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&right_square_bracket>;
+            label = "RIGHT_SQUARE_BRACKET";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -134,6 +164,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans    &trans  &trans  &trans
+                                        &trans    &trans  &trans
             >;
         };
     };
