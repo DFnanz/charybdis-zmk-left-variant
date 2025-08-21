@@ -100,12 +100,12 @@
         NuFu {
             label = "Numeral/Function";
             bindings = <
-&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT          &kp CARET        &kp AMPERSAND    &kp ASTERISK   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME
-&kp GRAVE         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT             &kp RBKT         &kp F1           &kp F2         &kp F3            &kp PIPE           &kp PG_UP
-&kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &soft_off            &kp BSLH         &kp F5           &kp F6         &kp F7            &kp BACKSLASH      &kp PAGE_DOWN
-&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &ext_power EP_TOG    &rgb_ug RGB_TOG  &kp F9           &kp F10        &kp F11           &kp SLASH          &kp END
-                                                               &kp LEFT_WIN  &kp SPACE            &none            &kp ENTER        &kp BACKSPACE
-                                                                             &rgb_ug RGB_BRI      &rgb_ug RGB_BRD  &rgb_ug RGB_EFF
+&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME
+&kp GRAVE         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT             &kp KP_NUMBER_1       &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_0   &kp PIPE           &kp PG_UP
+&kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &soft_off            &kp KP_NUMBER_4       &kp KP_NUMBER_5       &kp KP_NUMBER_6  &em_dash          &kp BACKSLASH      &kp PAGE_DOWN
+&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &ext_power EP_TOG    &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9  &en_dash          &kp SLASH          &kp END
+                                                               &kp LEFT_WIN  &kp SPACE            &kp RIGHT_ALT         &kp ENTER             &kp RSHIFT
+                                                                             &rgb_ug RGB_BRI      &none                 &none
             >;
         };
 
