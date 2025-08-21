@@ -60,36 +60,25 @@
         em_dash: em_dash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&em_dash>;
+            bindings =
+                <&em_dash>,
+                <&macro_press>,
+                <&kp LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_1>,
+                <&macro_press>;
+
             label = "EM_DASH";
         };
 
         en_dash: en_dash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&en_dash>;
+            bindings =
+                <&en_dash>,
+                <&macro_press>,
+                <&kp LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_0>,
+                <&macro_press>;
+
             label = "EN_DASH";
-        };
-
-        left_square_bracket: left_square_bracket {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&left_square_bracket>;
-            label = "LEFT_SQUARE_BRACKET";
-        };
-
-        right_square_bracket: right_square_bracket {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&right_square_bracket>;
-            label = "RIGHT_SQUARE_BRACKET";
-        };
-
-        dash_and_underscore: dash_and_underscore {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&dash_and_underscore>;
-            label = "DASH_AND_UNDERSCORE";
         };
     };
 
@@ -99,10 +88,10 @@
         Base {
             label = "Base";
             bindings = <
-&tog 1          &kp N1  &kp N2  &kp N3  &kp N4          &kp N5          &kp N6    &kp N7       &kp N8     &kp N9     &kp N0         &dash_and_underscore
-&kp CAPS        &kp Q   &kp W   &kp E   &kp R           &kp T           &kp Y     &kp U        &kp I      &kp O      &kp P          &kp BSPC
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D   &kp F           &kp G           &kp H     &kp J        &kp K      &kp L      &kp SEMI       &kp APOS
-&kp LCTRL       &kp Z   &kp X   &kp C   &kp V           &kp B           &kp N     &kp M        &kp COMMA  &lt 1 DOT  &kp LS(SLASH)  &lt 1 DELETE
+&tog 1          &kp N1  &kp N2  &kp N3  &kp N4          &kp N5          &kp N6    &kp N7       &kp N8     &kp N9     &kp N0        &kp MINUS
+&kp CAPS        &kp Q   &kp W   &kp E   &kp R           &kp T           &kp Y     &kp U        &kp I      &kp O      &kp P         &kp BSPC
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D   &kp F           &kp G           &kp H     &kp J        &kp K      &kp L      &kp SEMI      &kp APOS
+&kp LCTRL       &kp Z   &kp X   &kp C   &kp V           &kp B           &kp N     &kp M        &kp COMMA  &lt 1 DOT  &kp QUESTION  &lt 1 DELETE
                                         &lt 4 LEFT_ALT  &kp LEFT_GUI    &kp UP    &kp LEFT     &kp RIGHT
                                                         &lt 1 ENTER     &kp DOWN  &lt 1 SPACE
             >;
@@ -111,10 +100,10 @@
         NuFu {
             label = "Numeral/Function";
             bindings = <
-&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT          &kp CARET        &kp AMPERSAND    &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&kp GRAVE         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT             &kp RBKT         &kp F1           &kp F2         &kp F3                &kp F4                 &kp DEL
-&kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &soft_off            &kp BSLH         &kp F5           &kp F6         &kp F7                &kp F8                 &kp PAGE_UP
-&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &ext_power EP_TOG    &rgb_ug RGB_TOG  &kp F9           &kp F10        &kp F11               &kp F12                &kp PAGE_DOWN
+&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT          &kp CARET        &kp AMPERSAND    &kp ASTERISK   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME
+&kp GRAVE         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT             &kp RBKT         &kp F1           &kp F2         &kp F3            &kp PIPE           &kp PG_UP
+&kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &soft_off            &kp BSLH         &kp F5           &kp F6         &kp F7            &kp BACKSLASH      &kp PAGE_DOWN
+&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &ext_power EP_TOG    &rgb_ug RGB_TOG  &kp F9           &kp F10        &kp F11           &kp SLASH          &kp END
                                                                &kp LEFT_WIN  &kp SPACE            &none            &kp ENTER        &kp BACKSPACE
                                                                              &rgb_ug RGB_BRI      &rgb_ug RGB_BRD  &rgb_ug RGB_EFF
             >;
