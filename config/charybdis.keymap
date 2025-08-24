@@ -63,7 +63,7 @@
             bindings =
                 <&em_dash>,
                 <&macro_press>,
-                <&kp LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_1>,
+                <&kp LA(KP_NUMBER_0) &kp LA(KP_NUMBER_1) &kp LA(KP_NUMBER_5) &kp LA(KP_NUMBER_1)>,
                 <&macro_press>;
 
             label = "EM_DASH";
@@ -75,7 +75,7 @@
             bindings =
                 <&en_dash>,
                 <&macro_press>,
-                <&kp LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_0>,
+                <&kp LA(KP_NUMBER_0) &kp LA(KP_NUMBER_1) &kp LA(KP_NUMBER_5) &kp LA(KP_NUMBER_0)>,
                 <&macro_press>;
 
             label = "EN_DASH";
@@ -100,10 +100,10 @@
         NuFu {
             label = "Numeral/Function";
             bindings = <
-&none            &none         &kp PLUS        &kp EQUAL     &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME
-&kp TAB          &none         &kp LC(B)       &kp LC(I)     &kp LC(U)       &kp LA(LS(N5))     &kp KP_NUMBER_1       &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_0   &kp PIPE           &kp PG_UP
-&rgb_ug RGB_TOG  &out OUT_TOG  &studio_unlock  &out OUT_TOG  &out OUT_TOG    &out OUT_TOG       &kp KP_NUMBER_4       &kp KP_NUMBER_5       &kp KP_NUMBER_6  &em_dash          &kp BACKSLASH      &kp PAGE_DOWN
-&bt BT_NXT       &bt BT_NXT    &bt BT_NXT      &bt BT_NXT    &bt BT_NXT      &kp SPACE          &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9  &en_dash          &kp SLASH          &kp END
+&none            &none         &kp PLUS        &kp EQUAL     &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &em_dash
+&kp TAB          &none         &kp LC(B)       &kp LC(I)     &kp LC(U)       &kp LA(LS(N5))     &kp KP_NUMBER_1       &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_0   &kp PIPE           &en_dash
+&rgb_ug RGB_TOG  &out OUT_TOG  &studio_unlock  &out OUT_TOG  &out OUT_TOG    &out OUT_TOG       &kp KP_NUMBER_4       &kp KP_NUMBER_5       &kp KP_NUMBER_6  &em_dash          &kp BACKSLASH      &kp PAGE_UP
+&bt BT_NXT       &bt BT_NXT    &bt BT_NXT      &bt BT_NXT    &bt BT_NXT      &kp SPACE          &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9  &en_dash          &kp SLASH          &kp PAGE_DOWN
                                                              &kp BACKSPACE   &kp SPACE          &kp RIGHT_ALT         &kp ENTER             &kp RSHIFT
                                                                              &none              &none                 &none
             >;
